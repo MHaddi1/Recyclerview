@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCart">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <ImageView
+         android:id="@+id/img1"
+         android:layout_width="90dp"
+         android:layout_height="90dp"
+         android:src="@drawable/c"
+         tools:ignore="MissingConstraints"
+         tools:layout_editor_absoluteX="0dp"
+         tools:layout_editor_absoluteY="68dp" />
+
+     <TextView
+         android:id="@+id/tv1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+
+         android:layout_marginLeft="100dp"
+         android:layout_marginRight="100dp"
+
+         android:text="Hi" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/tv1"
+         android:layout_marginStart="11dp"
+         android:layout_marginTop="7dp"
+         android:layout_toEndOf="@+id/img"
+         android:text="Hi" />
+ </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
